@@ -24,6 +24,10 @@ body {
     position: relative;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 img {
     width: 100%;
 }
@@ -286,13 +290,17 @@ nav {
     justify-items: end;
 }
 
-nav ul {
-    list-style: none;
+nav ul li {
+    display: inline-block;
+    margin-left: 1rem;
+    padding-right:.1rem; 
+    padding-left:.1rem;
 }
 
-nav li {
-    display: inline-block;
-    padding-left: 1rem;
+nav ul li a {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
 }
 
 .divider {
@@ -326,6 +334,7 @@ button {
 
 button:hover {
     background: #D48202;
+    cursor: pointer;
 }
 
 footer {
@@ -337,6 +346,35 @@ footer {
   padding: 1rem;
   background-color: #0C1B58;
   text-align: center;
+}
+
+/* ==========================================================================
+   Transitions and animations
+   ========================================================================== */
+
+.grow img { 
+    transition: all .3s ease-in-out; 
+}
+
+
+.grow:hover img{
+    transform: scale(1.025) rotate(-1deg); 
+}
+
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    width: 0%;
+    border-bottom: 2px solid #F7F2F6;
+    transition: 0.3s ease-in-out;
+    }
+
+nav ul li a:hover:after {
+    width: 100%;
 }
 
 
@@ -425,9 +463,7 @@ footer {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries for Responsive Design.
    ========================================================================== */
 
 @media only screen and (max-width: 960px) {
