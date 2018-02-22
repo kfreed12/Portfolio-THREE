@@ -268,7 +268,7 @@ header {
     width: 50%;
 }
 
-.front-page-project img {
+.front-page-project-img {
     width: 50%;
     height: auto;
 }
@@ -580,7 +580,6 @@ nav ul li a:hover:after {
     .front-page-project img {
         order: 0;
         margin-bottom: 1rem;
-        width: auto;
     }
 
     .info-meta {
