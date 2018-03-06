@@ -11,7 +11,6 @@
    ========================================================================== */
 
 html {
-    height: 100%;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: #010515;
@@ -22,6 +21,7 @@ html {
 }
 
 body {
+    height: 100%;
     position: relative;
 }
 
@@ -131,13 +131,15 @@ h1 {
 }
 
 h2 {
+    color: #7B3B8B;
     font-weight: 700;
-    font-size: 1.777rem;
+    font-size: 2.35rem;
     line-height: 1.3;
 
 }
 
 h3 {
+    color: #7B3B8B;
     font-weight: normal;
     font-size: 1.333rem;
     line-height: 1.4;
@@ -145,6 +147,7 @@ h3 {
 }
 
 h4 {
+    color: #7B3B8B;
     font-weight: 700;
     font-size: .777rem;
     line-height: 1.4;
@@ -153,10 +156,18 @@ h4 {
 }
 
 h5 {
-    font-weight: 400;
-    font-size: .777rem;
-    line-height: 1;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #7B3B8B;
     opacity: .75;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 1;
 }
 
 ol li {
@@ -169,11 +180,19 @@ p {
 }
 
 .front-top-color {
-    color: #F7F2F6;
+    color: #F7F2F6; 
+}
+
+.front-top-color h3 {
+    color: #F7F2F6; 
+}
+
+.front-top-color h4 {
+    color: #F7F2F6; 
 }
 
 .info-meta {
-    opacity: .4;
+    opacity: .5;
 }
 
 #info-name-content{
@@ -279,8 +298,10 @@ header {
     flex-direction: row;
     height: 18rem;
     width: auto;
-    margin-top: 4.5rem;
-    margin-bottom: 4.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 
@@ -312,8 +333,8 @@ header {
 }
 
 .half {
-    padding-right: 12px;
-    padding-left: 12px;
+    margin-right: 12px;
+    margin-left: 12px;
     width: 50%;
     height: auto;
 }
@@ -333,15 +354,15 @@ header {
 }
 
 .spacer {
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 .spacer-small {
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .spacer-large {
-    padding-bottom: 9rem;
+    margin-bottom: 9rem;
 }
 
 .embed-container-43 {
@@ -384,6 +405,20 @@ header {
     margin-left: -200%;
     background-color:#777;
     padding: 20px 0;
+}
+
+.quote {
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    background-color: #F7F2F6;
+}
+
+.quote-empty {
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    background-color: none;
 }
 
 
