@@ -1,0 +1,240 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>WMEP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body div class="load-animation">
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <link href="https://fonts.googleapis.com/css?family=Volkhov|Bellefair|Lato:400,700" rel="stylesheet">
+
+        <!-- Unused JS stuff
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script> 
+         -->
+
+
+        <!-- Display content -->
+
+        <div class="top-bg motive-bg">
+        </div>
+        
+        <div class="container spacer-large">
+            <header>
+                <a ref="./index.html"><h3>KYLE FREED</h3></a>
+                <nav>
+                    <ul>
+                        <li><a ref="#">About Me</a></li>
+                        <li><a ref="#">Resume</a></li>
+                        <li><a ref="#">Projects</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="project-image-container">
+                <img src="../img/phone_test.png">
+            </div>
+
+            <div class= "project-page-container">
+                <div class="project-page-wrapper spacer-large">
+
+                    <div class="half order-1">
+                        <h4>Web App</h4>
+                        <h1>WellMetrics Event Planner</h1>
+                        <p>Web tool for ADURO Clients, Account Managers and Event Managers for creating, requesting and scheduling biometric screening events.</p>
+                    </div>
+
+                    <div class="quarter order-2">
+                        <h4>Role</h4>
+                        <p>Research</p>
+                        <p>UX Design</p>
+                    </div>
+
+                </div>
+
+                <div class="full-width project-page spacer">
+                    <h2>Problem</h2>
+                    <p>ADURO's Wellmetrics business offers biometric screenings to clients to measure employee health. As the business grows and matures, we face challenges with scaling. In this project, the process of clients scheduling these biometric screenings was identified as becoming unmanageable. Massive excel sheets with multiple drafts and versions were being passed around between clients, account managers, and our Wellmetrics event managers.
+                    
+                    <p>In this project, I addressed the following question:
+
+                    <p>How might we design a web based tool for ADURO <strong>Clients, Account Managers and Event Managers</strong> that <strong>improves the current workflow for biometric screening event scheduling</strong>, while building the foundations of future event planning functionality?
+
+                    <p>I faced two significant challenges with this project:
+
+                    <ol>
+                        <li>The whole project could only last 12 weeks for research, prototyping, development, testing, and deployment.</li>
+                        <li>Identify key MVP functionality, and design a tool that future capabilities could be built into.</li>
+                    </ol>
+                </div>
+
+                <div class="full-width project-page spacer">
+                    <h2>Research</h2>
+                    <h3>Understanding the current workflows and opportunities</h3>
+                    <p>The first step was understanding the currently process, identify stakeholders and responsibilities. We established three primary stakeholders early on: Clients, Account Managers and Wellmetrics Event Managers. 
+                    <p>The old workflow had clients submitting event requests on a complicated, messy Excel sheet to their Account Manager, and they would email back and forth until the Client was satisfied. Next, the Account Manager would pass the Excel document to the Wellmetrics Event Manager who would check to see if these dates were possible to accommodate, based primarily on equipment availability and staff availability. The issues were sent back to the Account Manager and communicated back to the client -- this would occur in a loop, with sometimes hundreds of events to keep track of. After the error prone communication was settled, the Client would digitally sign off on the order and the Event Manager would schedule the events manually. With hundreds of events a month, the sheer volume of work, errors, and frustrations compiled.</p>
+                    <div class="spacer-small"></div>
+                    <img src="../img/wmep/original_workflow.png">
+                    <div class="spacer"></div>
+                    <h3>Revising the workflow</h3>
+                    <p>We recognized that with a proper submission and approval system, inclusion of the Account Manager was typically unnecessary. Additionally, if we had an approval process from the client, we wouldn't need to use third party digital signature software. Below became the new standard workflow, and capabilities per stakeholder.
+                    <div class="spacer-small"></div>
+                    <img src="../img/wmep/new_workflow.png">
+                </div>
+
+                <div class="project-page-wrapper project-page">
+                    <div class="full-width">
+                        <h3>Stakeholder goals and capabilities</h3>
+                    </div>
+                </div>
+
+                <div class="project-page-wrapper project-page spacer-large">
+                    <div class="third">
+                        <p><strong>Client</strong></p>
+                        <ul>
+                            <li>Schedule Wellmetrics events</li>
+                            <li>Submit change orders for scheduled events</li>
+                        </ul>
+                    </div>
+                    <div class="third">
+                        <p><strong>Event Manager</strong></p>
+                        <ul>
+                            <li>Manage and approve submitted events and change orders</li>
+                            <li>Act on behalf of client if necessary</li>
+                        </ul>
+                    </div>
+                    <div class="third">
+                        <p><strong>Account Manager</strong></p>
+                        <ul>
+                            <li>Schedule Wellmetrics events</li>
+                            <li>Submit change orders for scheduled events</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="full-width">
+                    <h2>Ideation and prototyping</h2>
+                    <p>Due to our expedited timeline, we had to focus on creation and stakeholder buy-in as quickly as possible. After hitting the ground running by sketching some very basic ideas and information to be included with the product manager, I jumped into low fidelity interactive mockups with Sketch + Invision to establish new workflows and review with stakeholders. Due to our expedited timeline, we had to focus on creation and stakeholder buy-in as quickly as possible. After hitting the ground running by sketching some very basic ideas and information to be included with the product manager, I jumped into low fidelity interactive mockups with Sketch + Invision to establish new workflows and review with stakeholders.
+                <div class="spacer"></div>
+                    <h3>Initial collaborative sketch</h3>
+                    <p>By working through possible layouts and information needed to be included with the product manager, we were able to synthesize the information we had been collecting. It may not look pretty, but it was instrumental in aligning vision!
+                <div class="spacer-small"></div>
+                    <img src="../img/wmep/wmep_sketch.jpg">
+                <div class="spacer"></div>
+                    <h3>Low fidelity mockups</h3>
+                    <p>Transitioning away from submitting 100+ events at once for the entire year brought with it the effect of allowing a rolling event submission for our clients. I was excited about this opportunity and tried to design around that shift in paradigm, offering an interface that emphasized each event was individual and could be dealt with on its own. I learned through evaluating this prototype that actually lead to a clunky experience for clients with hundreds of events. Also included in the low fidelity mockups that did not make their way into the final version is cost estimation per event – What seemed like a straightforward pricing model actually was dependent on many factors we deemed too time intensive to work through on the MVP. However, the feature received great feedback, putting it on the roadmap for future iterations.
+                <div class="spacer-small"></div>
+                    <img src="../img/wmep/wf2.png">
+                </div>
+
+                <div class="spacer-small"></div>
+
+                <div class="project-page-wrapper spacer-large">
+                    <div class="half">
+                        <img src="../img/wmep/wf1.png">
+                    </div>
+                    <div class="half">
+                        <img src="../img/wmep/wf3.png">
+                    </div>
+                </div>
+
+                <div class="full-width">
+                    <h2>Design and documentation</h2>
+                    <p>After rounds of feedback, I had a good idea of what the final design should look like. Taking that into account, I created a design guide for developers to follow alongside the high fidelity mockups for final revisions and developer communication.
+
+                    <div class="spacer"></div>
+
+                    <h3>Documentation</h3>
+                    <p>My design guide includes layouts, components, buttons, object styles etc.  I used Invision as the primary way to communicate workflows, so if necessary developers could use the "inspect" mode that allows checking of colors, text styles, spacing and more. I used the guide to document patterns and all possible styles to avoid requiring hunting through individual screens. This communication was important because our development team is in Vietnam, making communication challenging.
+
+                    <div class="spacer-small"></div>
+
+                    <img src="../img/wmep/design_guide.png">
+
+                    <div class="spacer"></div>
+
+                    <h3>Visual Design</h3>
+                    <p>I made the final designs in Sketch, and used Invision and Flinto to communicate important interactions to stakeholders and developers. I used colors and typefaces from ADURO's brand guidelines while being fluid with the rest of the design. 
+                </div>
+
+                <div class="spacer-small"></div>
+
+                <div class="extended-content-container project-page-wrapper">
+                    <div class="half">
+                        <img src="../img/wmep/design4.png">
+                    </div>
+                    <div class="half">
+                        <img src="../img/wmep/design3.png">
+                    </div>
+                </div>
+
+                <div class="extended-content-container project-page-wrapper">
+                    <div class="quarter">
+                        <img src="../img/wmep/design3.png">
+                    </div>
+                    <div class="quarter">
+                        <img src="../img/wmep/design2.png">
+                    </div>
+                    <div class="quarter">
+                        <img src="../img/wmep/design1.png">
+                    </div>
+                    <div class="quarter">
+                        <img src="../img/wmep/design6.png">
+                    </div>
+                </div>
+
+                <div class="spacer-large"></div>
+
+                <div class="full-width">
+                    <h2>Final word</h2>
+                    <p>This project was driven by constraints, beginning with the limited timeframe and resulted in a challenging scope reduction exercise. I just a few weeks to do research, create prototypes, test, and create and communicate the first version of the final design spec. It took careful planning to figure out what needed to be done now and what could be done after development had started – including The success of this project is entirely due to thoughtful planning and intense collaboration across all involved departments. 
+                    <p>In the end, we have a tightly focused MVP to begin adding more capabilities to, like integrating stock, staffing, and automated scheduling.
+                </div>
+
+                <div class="spacer"></div>
+                
+
+
+
+        </div>
+
+        <footer>
+        <p>Footer content</p>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    </body>
+</html>
