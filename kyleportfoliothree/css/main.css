@@ -447,6 +447,8 @@ header {
 
 
 header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     display:flex;
     justify-content: space-between;
 }
@@ -682,9 +684,28 @@ nav ul li a:hover:after {
    Media Queries for Responsive Design.
    ========================================================================== */
 
+
+
+@media only screen and (max-width: 1280px) {
+
+    #kyle {
+        padding-left: 1rem;
+    }
+}
+
+
 @media only screen and (max-width: 960px) {
+
     html {
         font-size: 16px;
+    }
+
+    #kyle {
+        padding-left: none;
+    }
+
+    .full-width {
+        padding-left: 0;
     }
 
     .container {

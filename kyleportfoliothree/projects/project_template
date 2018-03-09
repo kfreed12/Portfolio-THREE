@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>XXXXXXXXXXX</title>
+        <meta name="description" content="">
+        <meta name="viewport" csontent="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body div class="load-animation">
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <link href="https://fonts.googleapis.com/css?family=Volkhov|Bellefair|Lato:400,700" rel="stylesheet">
+
+        <!-- Unused JS stuff
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script> 
+         -->
+
+
+        <!-- Display content -->
+
+        <div class="top-bg motive-bg">
+        </div>
+        
+        <div class="container spacer-large">
+            <header>
+                <div id="kyle">
+                    <a ref="./index.html"><h3>KYLE FREED</h3></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a ref="#">About Me</a></li>
+                        <li><a ref="#">Resume</a></li>
+                        <li><a ref="#">Projects</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="project-image-container">
+                <img src="../img/phone_test.png">
+            </div>
+
+            <div class= "project-page-container">
+                <div class="project-page-wrapper spacer-large">
+
+                    <div class="half order-1">
+                        <h4>Type of project</h4>
+                        <h1>Project title</h1>
+                        <p>Project description</p>
+                    </div>
+
+                    <div class="quarter order-2">
+                        <h4>Role</h4>
+                        <p>?????</p>
+                        <p>?????</p>
+                    </div>
+
+                </div>
+
+                <div class="spacer-small"></div>
+                <div class="spacer"></div>
+                <div class="spacer-small"></div>
+                
+
+
+
+        </div>
+
+        <footer>
+        <p>Footer content</p>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    </body>
+</html>
