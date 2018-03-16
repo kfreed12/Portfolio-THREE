@@ -1,0 +1,18 @@
+<svg width="72" height="84" viewBox="0 0 72 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 2.1</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(2 0 0 2 -7378 -9498)">
+<g id="Group 2.1">
+<g id="K">
+<use xlink:href="#path0_fill" transform="translate(3689 4749)" fill="#F7F2F6"/>
+</g>
+<g id="Subtract">
+<use xlink:href="#path1_fill" transform="translate(3709 4765)" fill="#F7F2F6"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 21.9551 25.6992L 14.1152 25.6992L 9.03516 15.873L 6.97852 17.1035L 6.97852 25.6992L 0 25.6992L 0 0L 6.97852 0L 6.97852 11.1621C 7.33008 10.4707 8.03906 9.375 9.10547 7.875L 14.502 0L 22.0957 0L 13.9922 11.5137L 21.9551 25.6992Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 0 11.6992L 5.37134 11.6992L 0 2.13037L 0 0L 15.1875 0L 15.1875 5.57227L 6.83789 5.57227L 6.83789 10.4766L 14.5371 10.4766L 14.5371 16.0488L 6.83789 16.0488L 6.83789 25.6992L 0 25.6992L 0 11.6992ZM 0 9.69922L 1.95508 9.69922L 0 6.21631L 0 9.69922Z"/>
+</defs>
+</svg>

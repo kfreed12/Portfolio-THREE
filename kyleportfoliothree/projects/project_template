@@ -35,7 +35,7 @@
         <div class="top-bg motive-bg">
         </div>
         
-        <div class="container spacer-large">
+        <div class="container">
             <header>
                 <div id="kyle">
                     <a ref="./index.html"><h3>KYLE FREED</h3></a>
@@ -75,7 +75,7 @@
                 <div class="spacer-small"></div>
                 
 
-
+            </div>
 
         </div>
 

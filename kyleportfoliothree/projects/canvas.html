@@ -1,0 +1,282 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Canvas</title>
+        <meta name="description" content="">
+        <meta name="viewport" csontent="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body div class="load-animation">
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <link href="https://fonts.googleapis.com/css?family=Volkhov|Bellefair|Lato:400,700" rel="stylesheet">
+
+        <!-- Unused JS stuff
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script> 
+         -->
+
+
+        <!-- Display content -->
+
+        <div class="top-bg motive-bg">
+        </div>
+        
+        <div class="container">
+            <header>
+                <div id="kyle">
+                    <a ref="./index.html"><h3>KYLE FREED</h3></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a ref="#">About Me</a></li>
+                        <li><a ref="#">Resume</a></li>
+                        <li><a ref="#">Projects</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="project-image-container">
+                <img src="../img/phone_test.png">
+            </div>
+
+            <div class= "project-page-container">
+                <div class="project-page-wrapper">
+
+                    <div class="half order-1">
+                        <h4>Web App</h4>
+                        <h1>Canvas</h1>
+                        <p>Redesign of a learning management system dashboard.</p>
+                    </div>
+
+                    <div class="quarter order-2">
+                        <h4>Role</h4>
+                        <p>Research</p>
+                        <p>UX Design</p>
+                        <p>Prototype and tester</p>
+                    </div>
+
+                </div>
+
+                <div class="spacer-large"></div>
+
+                <div class="full-width">
+                    <h2>Problem</h2>
+                    <p>The Canvas Learning Management System (LMS) used the University of Washington currently has an underutilized dashboard. Additionally, Canvas is missing ways for students to prioritize assignments and manage their time. I addressed this question:
+                    <p><strong>How can Canvas's dashboard be improved and support better time management?</strong>
+                </div>
+
+                <div class="spacer-large"></div>
+
+                <div class="full-width">
+                    <h2>Research</h2>
+                    <p>For this project, I interviewed Tyler Fox, past director of UW learning systems team as a subject matter expert to learn more about Canvas's functionality from an administrative side. I also interviewed three current users of Canvas to learn about how and why they use Canvas, their time management habits and most importantly, current practices. Interviews gave me qualitative data.
+                    <p>Here is what I learned:
+                        <ol>
+                            <li>While there were different priorities between current users and differing most frequently used features, there was unanimity regarding the low perceived utility of the dashboard.</li> 
+                            <li>Few users realized Canvas currently has a calendar feature which is helpful for determining how one’s time is used.</li>
+                            <li>Users adaptively change their priorities at least daily and sometimes multiple times a day based on what assignments they had completed, how much an assignment was worth and newly introduced assignments during class.</li>
+                            <li>Users almost exclusively used Canvas on their laptop or desktop and had a low percieved utility of other platforms.</li>
+                        </ol>
+                </div>
+
+
+                <div class="full-width">
+                    <h3>Interviewees</h3>
+                </div>
+                <div class="project-page-wrapper">
+                    <div class="half">
+                        <img src="../img/canvas/tylerfox.jpg"></img>
+                        <h4>Tyler Fox</h4>
+                    </div>
+                    <div class="half">
+                        <img src="../img/canvas/interview.jpg"></img>
+                        <h4>Current Students</h4>
+                    </div>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="full-width">
+                    <h3>Survey Highlights</h3>
+                </div>
+                <div class="project-page-wrapper">
+                    <div class="half">
+                        <img src="../img/canvas/chartdevice.png"></img>
+                        <h4>Device Importance</h4>
+                        <p>688 respondents reported that their laptop was the most important device for their academic success. This was confirmed in interviews as interviewees used Canvas when completing assignments, a task done exclusively on laptops. This information drove the final design solution of the web-based dashboard redesign.
+                    </div>
+                    <div class="half">
+                        <img src="../img/canvas/charteffective.png"></img>
+                        <h4>Student Effectiveness</h4>
+                        <p>This survey data suggests that over 2/3 of users agree or strongly agree that Canvas is important and, in interviews, would like to use it more and use it more effectively. This allowed me to confidently pursue a Canvas improvement rather than another direction.
+                    </div>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="full-width">
+                    <h3>User journey storyboard</h3>
+                    <p>For reference when developing a solution, I described a typical user journey translated from interviews into a short storyboard. An insight was that students typically only opened Canvas when they were in a position to do schoolwork and they usually had some sense of what was due -- Canvas was more useful in prioritizing and submitting assignments.
+                    <div class="spacer"></div>
+                    <img src="../img/canvas/storyboard.jpg"></img>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="full-width">
+                    <h3>Submit an assignment user flow</h3>
+                    <p>From my interviews, I discovered assignment submissions to be a key part of the Canvas experience. I created a user flow of doing this to demonstrate the current process and found the submission process to be quite cumbersome. My eventual design solution cuts out a good deal of this initial process. 
+                    <div class="spacer"></div>
+                    <img src="../img/canvas/flow.png"></img>
+                </div>
+
+                <div class="spacer-large"></div>
+
+                <div class="full-width">
+                    <h2>Ideation</h2>
+                    <p>First I sketched out broad possible directions, trying to figure out ways of approaching my design. Afterwards, I nailed down specifics using detailed interface sketches.
+                    <div class="spacer"></div>
+                    <h3>Thumbnail sketches</h3>
+                    <p>To arrive at a solution for the dashboard, I sketched out dashboard possible designs. These are some thumbnail explorations. 
+                    <div class="spacer"></div>
+                    <img src="../img/canvas/thumbnails.jpg"></img>
+                    <div class="spacer"></div>
+                    <h3>Interface sketches</h3>
+                    <p>These sketches are still exploratory and low fidelity, but show use of space and purpose better. I prioritized a laptop or desktop full browser experience due to research findings. I experimented with different layouts and decided to divide space up into three main columns: Calendar and assignments, classes, and a space with a temporary window that could be filled with different information, such as course information and assignment information.
+                    <div class="spacer"></div>
+                    <img src="../img/canvas/sketch1.jpg"></img>
+                    <div class="spacer-small"></div>
+                    <img src="../img/canvas/sketch2.jpg"></img>
+                </div>
+                
+                <div class="spacer-large"></div>
+
+                <div class="full-width">
+                    <h2>Wireframes and testing</h2>
+                    <p>I created a site map to organize information and then interactive wireframes for prototyping in Sketch. Next I put them in InVision for evaluation them using a usability testing protocol I created. My participants were Canvas users, so they were familiar with the current system.
+
+                    <div class="spacer"></div>
+
+                    <h3>Site map</h3>
+                    <img src="../img/canvas/infoarch.png"></img>
+
+                    <div class="spacer"></div>
+
+                    <h3>Initial layouts and wireframes</h3>
+                    <img src="../img/canvas/wireframes.png"></img>
+
+                    <div class="spacer"></div>
+
+                    <h3>Testing the wireframes</h3>
+                    <p>Asking users to evaluate and try and complete tasks and locate information yielded helpful information for continuing the design. I conducted two short rounds of user feedback to see if there were features they were expecting or missing, and if the design read as I intended it to. Below are some highlights of the feedback I received during these two rounds.
+                    <div class="spacer-small"></div>
+                    <img src="../img/canvas/wireframefeedback1.png"></img>
+                    <div class="spacer-small"></div>
+                    <img src="../img/canvas/wireframefeedback2.png"></img>
+                </div>
+
+                <div class="spacer-large"></div>
+
+                <div class="full-width">
+                    <h2>Final design</h2>
+                    <h3>Course window</h3>
+                    <p>The space on the right of the dashboard is used for both assignment information and course information. Here a course has been selected. Always present is the title and details about the course, and the top of the window is accented with the courses color. Users can navigate between home, announcements, discussion and grades. All of these were present in the original design, but my design consolidates and simplifies navigation.
+                    <div class="spacer-small"></div>
+                    <img src="../img/canvas/coursewindow.png"></img>
+
+                    <div class="spacer"></div>
+
+                    <h3>Assignment window</h3>
+                    <p>This window shows an assignment. The assignment window shows the name of the assignment, accented with the course's color. Underneath, details about the assignment like due date, percentage of grade and the course it is for are shown. Users can upload and submit files as well as ask questions or post comments about the assignment. Frequently, many students have the same question about an assignment -- this design prevents students asking their peers and instructors individually, wasting time.
+                    <div class="spacer-small"></div>
+                    <img src="../img/canvas/assignmentwindow.png"></img>
+                </div>
+
+                <div class="spacer"></div>
+
+
+                <div class="full-width">
+                    <h3>Old vs new dashboard</h3>
+                    <p>This redesign was created to help students manage their priorities, and simplify assignment inspection and class information at a glance. The Canvas LMS dashboard currently provides too little and too poorly organized information, and suffers from the these main issues:
+                    <ol>
+                        <li>The current system groups and collapses by default Announcements, Notifications, and Discussions, which makes it challenging to associate these individual items with their respective classes.</li>
+                        <li>The To-Do and Coming Up sections of the dashboard are useful and used shortcuts, but their entirely text based presentation lacks the visual dimensionality of time key to managing priorities.</li>
+                        <li>While the text does present the amount of points an assignment is worth, this is without context as the point amount is often a part of a weighted category making comparing assignments by points a useless measure.</li>
+                    </ol>
+                    <div class="spacer-small"></div>
+                    <img src="../img/canvas/oldvsnew.png"></img>
+                    <div class="spacer-small"></div>
+                    <p>The following features define the revised dashboard:
+                    <h3>Calendar</h3>
+                        <ul>
+                            <li>Shows assignments due throughout the month. Assignments are color coded with the course color. Each day shows the classes with assignments due. Current day is indicated with a blue dot surrounding the date, and the selected day (accessible by clicking days on the calendar) is shown by highlighting the day in blue.</li>
+                        </ul>
+                    <h3>Agenda</h3>
+                        <ul>
+                            <li>Shows assignments for today, this week, and a selected date. Assignments are quickly recognizable as belonging to a certain course by the colored dot to the left, the same system used for the calendar days. To the right of the assignment is how much the assignment is worth. A gradient of black to gray quickly indicates the importance of the assignment.</li>
+                        </ul>
+                    <h3>Course cards</h3>
+                        <ul>
+                            <li>Separation of course information into cards based on course allows attention to be separated efficiently by course.</li>
+                            <li>To quickly identify the course and all materials associated with the course, the color of the card is customizable.</li>
+                            <li>Notifications of announcements, new discussion messages and grade feedback.</li>
+                        </ul>
+                    <h3>Discussion</h3>
+                        <ul>
+                            <li>Casual discussion about a particular assignment or course schedule.</li>
+                        </ul>
+                </div>
+
+                <div class="spacer-large"></div>
+                    
+                <div class="full-width">
+                    <h2>Final word</h2>
+                    <p>Within the project timeframe, I was able to successfully solve the problems I set out to solve. However, given more time I would like to further improve the interface design, and use more rounds of testing to further improve functionality.
+                    <p>The way I tested my wireframes provided some usability insights but revealed more about concept validation. More rounds of fidelity usability testing would be important moving forward.
+                </div>
+
+                <div class="spacer-large"></div>
+                <div class="spacer-large"></div>
+
+            </div>
+
+        </div>
+
+        <footer>
+        <p>Footer content</p>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    </body>
+</html>
