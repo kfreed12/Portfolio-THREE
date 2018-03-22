@@ -21,8 +21,12 @@ html {
 }
 
 body {
-    height: 100%;
+    min-height: 100vh;
     position: relative;
+}
+
+.front-bg {
+    background-color: none;
     background-color: #F1F3F9;
 }
 
@@ -138,14 +142,15 @@ h2 {
     font-weight: 700;
     font-size: 2.35rem;
     line-height: 1.3;
-
 }
 
 h3 {
-    color: #312761;
+    color: #7B3B8B;
     font-weight: normal;
     font-size: 1.333rem;
     line-height: 1.4;
+
+    opacity: .75;
 
 }
 
@@ -154,7 +159,7 @@ h4 {
     font-weight: 700;
     font-size: .777rem;
     line-height: 1.4;
-    opacity: .75;
+    opacity: .4;
 
 }
 
@@ -216,7 +221,7 @@ header h3 {
 
 .front-page-project h4{
     margin-top: -0.1rem;    
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.6rem;
 }
 
 .front-page-project h1{  
@@ -242,10 +247,6 @@ header {
     background-color: #4B65B3;
     width: 100%;
     z-index: -1;
-}
-
-.motive-bg {
-    background-color: #64c571;
 }
 
 .container {
@@ -303,6 +304,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: -4.5rem;
+    height: 100%;
 }
 
 .front-page-project {
@@ -310,18 +312,68 @@ header {
     flex-direction: row;
     height: 18rem;
     width: auto;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 4rem;
 
 
     box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.05);
     border-radius:4px;
     background-color: white;
+    transition: all .3s ease-in-out;
 
 }
 
+.front-page-project:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.05);
+    margin-top:2.2rem;
+    margin-bottom: 4.3rem;
+}
+
+.front-page-project img {
+    margin-top: -1rem;
+}
+
+.basic-container {
+    max-width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 24px;
+}
+
+.about-me-container {
+    grid-column: 2/12;
+    display: flex;
+    flex-direction: row;
+    margin-top: -3rem;
+
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border: 1rem solid #ffffff;
+    background-color: white;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.05);
+
+    margin-top: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    margin-bottom: 6rem;
+}
+
+.padding-right {
+    padding-right: 3rem;
+}
+
+.about-me-container img {
+    margin-top: 2rem;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
 
 .project-page-wrapper {
     display: flex;
@@ -452,30 +504,35 @@ header {
     padding: 20px 0;
 }
 
+.resumeWrapper iframe{
+    display: block;
+    width: 52rem;
+    height: 66rem;
+    max-width: 100%;
+    margin: auto;
+}
+
 .quote {
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-bottom: 12px;
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-bottom: 8px;
+    padding-bottom: 16px;
     background-color: #F7F2F6;
 }
 
 .quote-empty {
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-bottom: 12px;
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-bottom: 8px;
     background-color: none;
 }
 
 
 #kyle {
     padding-top: 1rem;
+    margin-bottom: 1rem;
+    transition: all .3s ease-in-out;
 }
-
-#kyle:hover {
-    background-color: rgba(201, 76, 76, 0.3);
-
-}
-
 
 /* ----- Project specific stuff -------*/
 
@@ -484,6 +541,51 @@ header {
     grid-row: 2;
     transform: scale(1.2);
 }
+
+
+
+/* ==========================================================================
+   Project backgrounds and images
+   ========================================================================== */
+
+.laptop-image {
+    width: 93%;
+}
+
+.motive-bg {
+    background-color: #7b3b8b;
+    opacity: .6;
+}
+
+.canvas-bg {
+    background-color: #7b3b8b;
+    opacity: .6;
+}
+
+.eos-bg {
+    background-color: #7b3b8b;
+    opacity: .6;
+}
+
+.macbook {
+    margin-top: 2rem;
+    grid-column: 3/11;
+}
+
+
+.social-icon {
+    display: inline-block;
+    width: 24px;
+    height: auto;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
 
 
 /* ==========================================================================
@@ -514,6 +616,7 @@ nav ul li a {
     position: relative;
     list-style: none;
     text-decoration: none;
+    color: #F7F2F6;
 }
 
 .divider {
@@ -539,10 +642,11 @@ nav ul li a {
     font-family: 'Lato', sans-serif;
     color: #ffffff;
     font-size: 18px;
+    letter-spacing: 1px;
     background: #EEA738;
     padding: 12px 24px 10px 24px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-style: none;
     transition: background .12s ease-out;
 }
@@ -550,6 +654,13 @@ nav ul li a {
 .button:hover {
     background: #D48202;
     cursor: pointer;
+}
+
+.full-button {
+    display: block;
+    padding: 14px 28px;
+    cursor: pointer;
+    text-align: center;
 }
 
 footer {
@@ -564,6 +675,38 @@ footer {
     margin-top: 3rem;
 }
 
+#index-footer {
+
+}
+
+#aboutme-footer {
+
+}
+
+#resume-footer {
+    bottom: -9rem;
+}
+
+#motive-footer {
+    bottom: -6rem;
+}
+
+#wmep-footer {
+    bottom: -9rem;
+}
+
+#ui_challenges-footer {
+    bottom: -9rem;
+}
+
+#eos-footer {
+
+}
+
+#canvas-footer {
+    bottom: -9rem;
+}
+
 /* ==========================================================================
    Transitions and animations
    ========================================================================== */
@@ -574,7 +717,7 @@ footer {
 
 
 .grow:hover img{
-    transform: scale(1.025) rotate(-1deg); 
+    transform: scale(1.08); 
 }
 
 
@@ -604,13 +747,12 @@ nav ul li a:hover:after {
 
 .load-animation-2 {
     opacity: 0;
-    -webkit-animation: fadein 1s ease-in 0.4s forwards;
-    -moz-animation: fadein 1s ease-in 0.4s forwards;
-    -ms-animation: fadein 1s ease-in 0.4s forwards;
-    -o-animation: fadein 1s ease-in 0.4s forwards;
-    animation: fadein 1s ease-in 0.4s forwards;
+    -webkit-animation: fadein 2s ease-in 0.4s forwards;
+    -moz-animation: fadein 2s ease-in 0.4s forwards;
+    -ms-animation: fadein 2s ease-in 0.4s forwards;
+    -o-animation: fadein 2s ease-in 0.4s forwards;
+    animation: fadein 2s ease-in 0.4s forwards;
 }
-
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -736,6 +878,23 @@ nav ul li a:hover:after {
     #kyle {
         padding-left: 1rem;
     }
+
+    .resumeWrapper iframe{
+        width: 52rem;
+        height: 58rem;
+    }
+
+    .front-page-project img {
+        margin-top: 1rem;
+    }
+
+    #info-description-content{
+        font-size: 2.8rem;
+    }
+
+    .project-image-container {
+        margin-top: 4rem;
+    }
 }
 
 
@@ -799,6 +958,11 @@ nav ul li a:hover:after {
         grid-column: 1/13;
     }
 
+    .resumeWrapper iframe{
+        width: 52rem;
+        height: 50rem;
+    }
+
 
     
 }
@@ -806,7 +970,6 @@ nav ul li a:hover:after {
 
 
 @media only screen and (max-width: 768px) {
-
 
     html {
         font-size: 16px;
@@ -822,18 +985,37 @@ nav ul li a:hover:after {
         grid-column-gap: 16px;
     }
 
+    .basic-container{
+        padding-right: 16px;
+        padding-left: 16px;
+        grid-column-gap: 16px;
+    }
+
+    .about-me-container {
+        grid-column: 1/13;
+    }
+
+    #info-description-content {
+        font-size: 2.5rem;
+    }
+
         /* ----- Project specific stuff -------*/
 
     .project-image-container {
         grid-column: 1/13;
         grid-row: 2/5;
         transform: scale(1.2);
+        margin-top: 0;
     }
 
     .three-quarter {
         width: 100%;
     }
 
+
+    .front-page-project img {
+        margin-top: 2rem;
+    }
 
 
 }
@@ -849,6 +1031,10 @@ nav ul li a:hover:after {
         font-size: 2.8rem;
     }
 
+    .front-page-project img {
+        margin-top: -.8rem;
+    }
+
     .container {
         padding-right: 16px;
         padding-left: 16px;
@@ -856,11 +1042,27 @@ nav ul li a:hover:after {
         grid-template-rows: 60px repeat(4 , 9rem) repeat(13, 9rem) 6rem;
     }
 
+    .basic-container {
+        padding-right: 16px;
+        padding-left: 16px;
+        grid-column-gap: 16px;
+    }
+
+    .about-me-container {
+        flex-direction: column;
+        padding-right: .8rem;
+        padding-left: 0;
+    }
+
     .front-page-project-container, .project-page-container {
         grid-column: 1/13;
-        grid-row: 7/34;
-        margin-top: -9rem;
+        grid-row: 5/34;
+        margin-top: 3rem;
         margin-bottom: 9rem;
+    }
+
+    .project-page-container {
+        margin-top: 10rem;
     }
 
     .project-page-wrapper {
@@ -870,9 +1072,19 @@ nav ul li a:hover:after {
     }
 
     .front-page-project {
+        padding-left: 1.2rem;
+        padding-right: .8rem;
         display: flex;
         flex-direction: column;
         height: 100%;
+    }
+
+    .quote {
+        margin-left: -16px;
+        margin-right: 0px;
+        padding-left: 16px;
+        padding-right: 32px;
+        margin-bottom: 12px;
     }
 
 
@@ -916,7 +1128,6 @@ nav ul li a:hover:after {
     }
 
 
-
     .five-twelths {
         width: 90%;
     }
@@ -934,13 +1145,19 @@ nav ul li a:hover:after {
     }
 
 
+    #hide-small {
+        display: none;
+    }
+
+
 
     /* ----- Project specific stuff -------*/
 
     .project-image-container {
         grid-column: 1/14;
         grid-row: 3;
-        transform: scale(1.2);
+        transform: scale(1.1);
+        margin-top: 2rem;
     }
 
 

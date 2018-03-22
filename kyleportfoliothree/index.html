@@ -1,6 +1,17 @@
 <!doctype html>
 <html class="no-js" lang="">
     <head>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116047521-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-116047521-1');
+        </script>
+
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Kyle Freed</title>
@@ -14,7 +25,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body div class="load-animation">
+    <body div class="load-animation front-bg">
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -36,17 +47,17 @@
         <div class="top-bg">
         </div>
         
-        <div class="container spacer-large">
+        <div class="container">
 
             <header>
                 <div id="kyle">
-                    <a ref="./index.html"><img src="img/logo1x.png"></img></a>
+                    <a href="index.html"><img src="img/logo1x.png"></img></a>
                 </div>
                 <nav>
                     <ul>
-                        <li><a ref="#">About Me</a></li>
-                        <li><a ref="#">Resume</a></li>
-                        <li><a ref="#">Projects</a></li>
+                        <li><a href="aboutme.html">About Me</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="index.html">Projects</a></li>
                     </ul>
                 </nav>
             </header>
@@ -71,22 +82,17 @@
                 <p id="info-current-content">Senior User Experience Designer at ADURO, defining product design process and leading our biometric screening business design efforts.</p>
             </div>
 
-
-            <!--<div class="divider" id="front-page-divider">
-            </div>-->
-
-
             <div class="front-page-project-container">
 
                 <div class= "front-page-project grow">
                         <div class="half">
-                            <img src="img/phone_test.png">
+                            <img src="img/motive/phone-mockup-sized.png">
                         </div>
                         <div class="five-twelths order-1">
                             <h4>Mobile App</h4>
                             <h1>Motive</h1>
                             <p>Mobile app and video game improving the at home physical therapy experience for patients.</p>
-                            <a href="projects/motive.html" class="button"> Read More</a>
+                            <a href="projects/motive.html" class="button">Read More</a>
                         </div>
                         <div class="one-twelth"></div>
                 </div>
@@ -101,13 +107,13 @@
                         <a href="projects/wmep.html" class="button">Read More</a>
                     </div>
                     <div class="half">
-                        <img src="img/phone_test.png">
+                        <img class="laptop-image" src="img/wmep/macbook-mockup-sized.png">
                     </div>
                 </div>
 
                 <div class= "front-page-project grow">
                     <div class="half">
-                        <img src="img/phone_test.png">
+                        <img src="./img/ui_challenge/phone-mockup-sized.png">
                     </div>
                     <div class="five-twelths order-1">
                         <h4>UI Design</h4>
@@ -127,13 +133,13 @@
                         <a href="projects/eos.html" class="button">Read More</a>
                     </div>
                 <div class="half">
-                    <img src="img/phone_test.png">
+                    <img src="img/eos/phone-mockup-sized.png">
                 </div>
                 </div>
 
                 <div class= "front-page-project grow">
                     <div class="half">
-                        <img src="img/phone_test.png">
+                        <img class="laptop-image" src="img/canvas/macbook-mockup-sized.png">
                     </div>
                     <div class="five-twelths order-1">
                         <h4>Web App</h4>
@@ -145,36 +151,36 @@
                 </div>
 
                 <div class="spacer-large"></div>
-
+                <div class="spacer-large"></div>
 
             </div>
 
 
         </div>
 
-        
+        <footer id='index-footer'>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/kylerfreed/"><img src="./linkedin.svg"></img></a>
+            </div>
 
-        <footer>
-        <p>Footer content</p>
+            <div class="social-icon">
+                <a href="https://www.instagram.com/kfreed12/"><img src="./instagram.svg"></img></a>
+            </div>
+
+            <div class="social-icon">
+                <a href="https://www.github.com/kfreed12"><img src="./github.svg"></img></a>
+            </div>
         </footer>
 
 
+        <!--
+        
+        Attribution of icons to:
+            https://fontawesome.com/license
+
+        -->
 
 
-
-
-
-
-
-
-
-
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
     </body>
 </html>
