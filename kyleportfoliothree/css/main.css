@@ -210,8 +210,8 @@ p {
 
 .list-style li::before {
   content: counter(step-counter);
-  margin-right: .5rem;
-  font-size: 1.2rem;
+  margin-right: .4rem;
+  font-size: 1.1rem;
   padding: 3px 8px;
 
   font-weight: bold;
@@ -696,6 +696,17 @@ nav ul li a {
     text-align: center;
 }
 
+.space-between-buttons {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    padding-left: 12px;
+}
+
+#button-extra-height {
+    padding-bottom: 20px;
+}
+
 footer {
     color: #F7F2F6;
     position: absolute;
@@ -1048,6 +1059,11 @@ nav ul li a:hover:after {
 
     .front-page-project img {
         margin-top: 2rem;
+    }
+
+    .space-between-buttons {
+        padding-left: 0;
+        padding-right: 1rem;
     }
 
 
