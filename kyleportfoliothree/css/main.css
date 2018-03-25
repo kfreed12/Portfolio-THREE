@@ -703,6 +703,10 @@ nav ul li a {
     padding-left: 12px;
 }
 
+.space-between-buttons .button {
+    padding-bottom: 18px;
+}
+
 #button-extra-height {
     padding-bottom: 20px;
 }
