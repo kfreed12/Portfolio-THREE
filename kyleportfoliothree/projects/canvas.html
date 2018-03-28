@@ -25,6 +25,8 @@
 
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/main.css">
+
+        <link rel="stylesheet" href="../css/lightbox.css">
     </head>
     <body div class="load-animation">
         <!--[if lte IE 9]>
@@ -33,14 +35,11 @@
 
         <link href="https://fonts.googleapis.com/css?family=Volkhov|Bellefair|Lato:400,700" rel="stylesheet">
 
-        <!-- Unused JS stuff
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script> 
-         -->
-
 
         <!-- Display content -->
 
@@ -111,11 +110,15 @@
                 </div>
                 <div class="project-page-wrapper">
                     <div class="half">
-                        <img src="../img/canvas/tylerfox.jpg"></img>
+                        <a href="../img/canvas/tylerfox.jpg" data-lightbox="Tyler-Fox" data-title="Tyler Fox, director of UW learning systems">
+                            <img src="../img/canvas/tylerfox.jpg"></img>
+                        </a>
                         <h4>Tyler Fox</h4>
                     </div>
                     <div class="half">
-                        <img src="../img/canvas/interview.jpg"></img>
+                        <a href="../img/canvas/interview.jpg" data-lightbox="current-student" data-title="Interview with current student">
+                            <img src="../img/canvas/interview.jpg"></img>
+                        </a>
                         <h4>Current Students</h4>
                     </div>
                 </div>
@@ -127,12 +130,16 @@
                 </div>
                 <div class="project-page-wrapper">
                     <div class="half">
-                        <img src="../img/canvas/chartdevice.png"></img>
+                        <a href="../img/canvas/chartdevice.png" data-lightbox="chart-device" data-title="Device importance to academic success">
+                            <img src="../img/canvas/chartdevice.png"></img>
+                        </a>
                         <h4>Device Importance</h4>
                         <p>688 respondents reported that their laptop was the most important device for their academic success. This was confirmed in interviews as interviewees used Canvas when completing assignments, a task done exclusively on laptops. This information drove the final design solution of the web-based dashboard redesign.
                     </div>
                     <div class="half">
-                        <img src="../img/canvas/charteffective.png"></img>
+                        <a href="../img/canvas/charteffective.png" data-lightbox="chart-effectiveness" data-title="Canvas importance to student effectiveness">
+                            <img src="../img/canvas/charteffective.png"></img>
+                        </a>
                         <h4>Student Effectiveness</h4>
                         <p>This survey data suggests that over 2/3 of users agree or strongly agree that Canvas is important and, in interviews, would like to use it more and use it more effectively. This allowed me to confidently pursue a Canvas improvement rather than another direction.
                     </div>
@@ -144,7 +151,9 @@
                     <h3>User journey storyboard</h3>
                     <p>For reference when developing a solution, I described a typical user journey translated from interviews into a short storyboard. An insight was that students typically only opened Canvas when they were in a position to do schoolwork and they usually had some sense of what was due -- Canvas was more useful in prioritizing and submitting assignments.
                     <div class="spacer"></div>
-                    <img src="../img/canvas/storyboard.jpg"></img>
+                    <a href="../img/canvas/storyboard.jpg" data-lightbox="storyboard" data-title="User journey storyboard">
+                        <img src="../img/canvas/storyboard.jpg"></img>
+                    </a>
                 </div>
 
                 <div class="spacer"></div>
@@ -153,7 +162,9 @@
                     <h3>Submit an assignment user flow</h3>
                     <p>From my interviews, I discovered assignment submissions to be a key part of the Canvas experience. I created a user flow of doing this to demonstrate the current process and found the submission process to be quite cumbersome. My eventual design solution cuts out a good deal of this initial process. 
                     <div class="spacer"></div>
-                    <img src="../img/canvas/flow.png"></img>
+                    <a href="../img/canvas/flow.png" data-lightbox="user-flow" data-title="Submit an assignment user flow">
+                        <img src="../img/canvas/flow.png"></img>
+                    </a>
                 </div>
 
                 <div class="spacer-large"></div>
@@ -165,14 +176,20 @@
                     <h3>Thumbnail sketches</h3>
                     <p>To arrive at a solution for the dashboard, I sketched out dashboard possible designs. These are some thumbnail explorations. 
                     <div class="spacer"></div>
-                    <img src="../img/canvas/thumbnails.jpg"></img>
+                    <a href="../img/canvas/thumbnails.jpg" data-lightbox="thumbnails" data-title="Thumbnail sketching">
+                        <img src="../img/canvas/thumbnails.jpg"></img>
+                    </a>
                     <div class="spacer"></div>
                     <h3>Interface sketches</h3>
                     <p>These sketches are still exploratory and low fidelity, but show use of space and purpose better. I prioritized a laptop or desktop full browser experience due to research findings. I experimented with different layouts and decided to divide space up into three main columns: Calendar and assignments, classes, and a space with a temporary window that could be filled with different information, such as course information and assignment information.
                     <div class="spacer"></div>
-                    <img src="../img/canvas/sketch1.jpg"></img>
+                    <a href="../img/canvas/sketch1.jpg" data-lightbox="canvas-sketch-1" data-title="Canvas sketch 1">
+                        <img src="../img/canvas/sketch1.jpg"></img>
+                    </a>
                     <div class="spacer-small"></div>
-                    <img src="../img/canvas/sketch2.jpg"></img>
+                    <a href="../img/canvas/sketch2.jpg" data-lightbox="canvas-sketch-2" data-title="Canvas sketch 2">
+                        <img src="../img/canvas/sketch2.jpg"></img>
+                    </a>
                 </div>
                 
                 <div class="spacer-large"></div>
@@ -184,7 +201,9 @@
                     <div class="spacer"></div>
 
                     <h3>Site map</h3>
-                    <img src="../img/canvas/infoarch.png"></img>
+                    <a href="../img/canvas/infoarch.png" data-lightbox="info-arch" data-title="Information architecture">
+                        <img src="../img/canvas/infoarch.png"></img>
+                    </a>
 
                     <div class="spacer"></div>
 
@@ -196,9 +215,13 @@
                     <h3>Testing the wireframes</h3>
                     <p>Asking users to evaluate and try and complete tasks and locate information yielded helpful information for continuing the design. I conducted two short rounds of user feedback to see if there were features they were expecting or missing, and if the design read as I intended it to. Below are some highlights of the feedback I received during these two rounds.
                     <div class="spacer-small"></div>
-                    <img src="../img/canvas/wireframefeedback1.png"></img>
+                    <a href="../img/canvas/wireframefeedback1.png" data-lightbox="wireframe-feedback-1" data-title="Wireframe feedback round 1">
+                        <img src="../img/canvas/wireframefeedback1.png"></img>
+                    </a>
                     <div class="spacer-small"></div>
-                    <img src="../img/canvas/wireframefeedback2.png"></img>
+                    <a href="../img/canvas/wireframefeedback2.png" data-lightbox="wireframe-feedback-2" data-title="Wireframe feedback round 1">
+                        <img src="../img/canvas/wireframefeedback2.png"></img>
+                    </a>
                 </div>
 
                 <div class="spacer-large"></div>
@@ -208,14 +231,18 @@
                     <h3>Course window</h3>
                     <p>The space on the right of the dashboard is used for both assignment information and course information. Here a course has been selected. Always present is the title and details about the course, and the top of the window is accented with the courses color. Users can navigate between home, announcements, discussion and grades. All of these were present in the original design, but my design consolidates and simplifies navigation.
                     <div class="spacer-small"></div>
-                    <img src="../img/canvas/coursewindow.png"></img>
+                    <a href="../img/canvas/coursewindow.png" data-lightbox="course-window" data-title="Course window">
+                        <img src="../img/canvas/coursewindow.png"></img>
+                    </a>
 
                     <div class="spacer"></div>
 
                     <h3>Assignment window</h3>
                     <p>This window shows an assignment. The assignment window shows the name of the assignment, accented with the course's color. Underneath, details about the assignment like due date, percentage of grade and the course it is for are shown. Users can upload and submit files as well as ask questions or post comments about the assignment. Frequently, many students have the same question about an assignment -- this design prevents students asking their peers and instructors individually, wasting time.
                     <div class="spacer-small"></div>
-                    <img src="../img/canvas/assignmentwindow.png"></img>
+                    <a href="../img/canvas/assignmentwindow.png" data-lightbox="assignment-window" data-title="Assignment window">
+                        <img src="../img/canvas/assignmentwindow.png"></img>
+                    </a>
                 </div>
 
                 <div class="spacer"></div>
@@ -230,7 +257,9 @@
                         <li>While the text does present the amount of points an assignment is worth, this is without context as the point amount is often a part of a weighted category making comparing assignments by points a useless measure.</li>
                     </ol>
                     <div class="spacer-small"></div>
-                    <img src="../img/canvas/oldvsnew.png"></img>
+                    <a href="../img/canvas/oldvsnew.png" data-lightbox="old-vs-new" data-title="Old vs New design">
+                        <img src="../img/canvas/oldvsnew.png"></img>
+                    </a>
                     <div class="spacer-small"></div>
                     <p>The following features define the revised dashboard:
                     <h3>Calendar</h3>
@@ -286,5 +315,6 @@
             </div>
         </footer>
 
+    <script src="../js/lightbox.js"></script>
     </body>
 </html>

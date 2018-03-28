@@ -23,7 +23,11 @@
 
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/main.css">
+
+        <link rel="stylesheet" href="../css/lightbox.css">
+
     </head>
+
     <body div class="load-animation">
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -31,13 +35,12 @@
 
         <link href="https://fonts.googleapis.com/css?family=Volkhov|Bellefair|Lato:400,700" rel="stylesheet">
 
-        <!-- Unused JS stuff
+        
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script> 
-         -->
 
 
         <!-- Display content -->
@@ -104,12 +107,16 @@
 
                     <div class="project-page-wrapper">
                         <div class="half order-1">
-                            <img src="../img/eos/survey1.png"></img>
+                            <a href="../img/eos/survey1.png" data-lightbox="survey-1" data-title="Mid sleep time check">
+                                <img src="../img/eos/survey1.png"></img>
+                            </a>
                             <h4>Mid Sleep Time Check</h4>
                             <p>Over half of our 23 respondents used their cell phone at night to check the time when they woke up, which can disrupt sleep with bright lights, notifications and potential anxiety.
                         </div>
                         <div class="half order-2">
-                            <img src="../img/eos/survey2.png"></img>
+                            <a href="../img/eos/survey2.png" data-lightbox="survey-2" data-title="Waking habits">
+                                <img src="../img/eos/survey2.png"></img>
+                            </a>
                             <h4>Waking Habits</h4>
                             <p>Our survey showed that of our 23 respondents, most used a sound based alarm to wake up in the morning – meaning a more abrupt, less rested waking experience.
                         </div>
@@ -128,7 +135,9 @@
                         <li>Lights behind the headboard of a bed</li>
                     </ol>
                     <div class="spacer"></div>
-                    <img src="../img/eos/pillowsketches.jpg"></img>
+                    <a href="../img/eos/pillowsketches.jpg" data-lightbox="pillow-sketches" data-title="Pillow Sketches">
+                        <img src="../img/eos/pillowsketches.jpg"></img>
+                    </a>
                 </div>
 
                 <div class="spacer"></div>
@@ -144,7 +153,9 @@
                         <li>Turn on and off haptic alarms</li>
                     </ol>
                     <div class="spacer"></div>
-                    <img src="../img/eos/appsketches.jpg"></img>
+                    <a href="../img/eos/appsketches.jpg" data-lightbox="app-sketches" data-title="App Sketches">
+                        <img src="../img/eos/appsketches.jpg"></img>
+                    </a>
                 </div>
 
                 <div class="spacer-large"></div>
@@ -159,22 +170,30 @@
                 <div class="spacer-small"></div>
 
                 <div class="full-width">
-                    <img src="../img/eos/pillow.png"></img>
+                    <a href="../img/eos/pillow.png" data-lightbox="pillow" data-title="The pillow">
+                        <img src="../img/eos/pillow.png"></img>
+                    </a>
                 </div>
 
                 <div class="spacer"></div>
 
                 <div class="project-page-wrapper">
                     <div class="half">
-                        <div class="embed-container"><img src="../img/eos/thebrain.jpg"></div>
-                        <h4>The Brain</h4>
-                        <p>Two Arduinos control the lights and vibration motors enclosed in a laser cut box, powered by a 6000mah USB power bank.
+                        <div class="embed-container">
+                            <a href="../img/eos/thebrain.jpg" data-lightbox="the-brain" data-title="The brain">
+                                <img src="../img/eos/thebrain.jpg"></div>
+                            </a>
+                            <h4>The Brain</h4>
+                            <p>Two Arduinos control the lights and vibration motors enclosed in a laser cut box, powered by a 6000mah USB power bank.
                     </div>
 
                     <div class="half">
-                        <div class="embed-container"><img src="../img/eos/thelights.jpg"></div>
-                        <h4>The Lights</h4>
-                        <p>The array of LEDs serve to light the pillow. Each light can be set with an RGB value, enabling fading and animating.
+                        <div class="embed-container">
+                            <a href="../img/eos/thelights.jpg" data-lightbox="the-lights" data-title="The lights">
+                                <img src="../img/eos/thelights.jpg"></div>
+                            </a>
+                            <h4>The Lights</h4>
+                            <p>The array of LEDs serve to light the pillow. Each light can be set with an RGB value, enabling fading and animating.
                     </div>
                 </div>
 
@@ -182,13 +201,19 @@
 
                 <div class="project-page-wrapper">
                     <div class="half">
-                        <div class="embed-container"><img src="../img/eos/theclock.jpg"></div>
+                        <div class="embed-container">
+                            <a href="../img/eos/theclock.jpg" data-lightbox="the-clock" data-title="The clock">
+                                <img src="../img/eos/theclock.jpg"></div>
+                            </a>
                         <h4>The Clock</h4>
                         <p>Two clock modes prevent the use of a bright and distracting phone in the middle of the night to check the time.
                     </div>
 
                     <div class="half">
-                        <div class="embed-container"><img src="../img/eos/thepillow.jpg"></div>
+                        <div class="embed-container">
+                            <a href="../img/eos/thepillow.jpg" data-lightbox="the-pillow" data-title="The pillow">
+                                <img src="../img/eos/thepillow.jpg"></div>
+                            </a>
                         <h4>The Pillow</h4>
                         <p>The pillow cycles through various light colors and intensities before entering alarm mode which introduces vibration.
                     </div>
@@ -215,11 +240,16 @@
                     
                     <div class="spacer-small"></div>
 
-                    <img src="../img/eos/appflow.png"></img>
+                    <a href="../img/eos/appflow.png" data-lightbox="app-flows" data-title="App flow">
+                        <img src="../img/eos/appflow.png"></img>
+                    </a>
 
                     <div class="spacer-small"></div>
 
-                    <img src="../img/eos/icononphone.png"></img>
+                    <a href="../img/eos/icononphone.png" data-lightbox="icononphone" data-title="iPhone icon">
+                        <img src="../img/eos/icononphone.png"></img>
+                    </a>
+
                 </div>
 
                 <div class="spacer-large"></div>
@@ -260,6 +290,6 @@
         </footer>
 
 
-
+    <script src="../js/lightbox.js"></script>
     </body>
 </html>
